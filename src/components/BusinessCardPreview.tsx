@@ -129,7 +129,7 @@ export function BusinessCardPreview({ personalInfo, address, generatedUrls }: Bu
         )}
 
         {/* JSON Output */}
-        <div className="border-t pt-6">
+        {/* <div className="border-t pt-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Generated JSON Output</h3>
           <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-sm overflow-auto max-h-64">
             <pre>
@@ -140,7 +140,7 @@ export function BusinessCardPreview({ personalInfo, address, generatedUrls }: Bu
               }, null, 2)}
             </pre>
           </div>
-        </div>
+        </div> */} 
       </div>
     </div>
   );
