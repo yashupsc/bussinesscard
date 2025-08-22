@@ -4,8 +4,11 @@ import { CreditCard, Mail, Lock, User, AlertCircle } from 'lucide-react';
 
 export function AuthForm() {
   const [isSignUp, setIsSignUp] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  
+  // ✅ Pre-filled default values
+  const [email, setEmail] = useState('vavaliyayash@gmail.com');
+  const [password, setPassword] = useState('yash1234');
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { signIn, signUp } = useAuth();
@@ -118,7 +121,8 @@ export function AuthForm() {
         {/* Demo Info */}
         <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <p className="text-sm text-blue-800 text-center">
-            <strong>Demo:</strong> Use any email and password (min 6 characters) to create an account
+            <strong>Demo:</strong> Default login pre-filled → <br />
+            <span className="font-mono">vavaliyayash@gmail.com / yash1234</span>
           </p>
         </div>
       </div>
